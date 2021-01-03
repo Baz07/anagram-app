@@ -1,0 +1,45 @@
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
+    color: $white
+}
+
+.container__inputs {
+    background: $blue;
+    color: $off-white;
+    padding: $m-size;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 $s-size;
+}
+
+.container__header {
+    background: $off-black;
+    text-align: center;
+    color: $off-white;
+    padding: $m-size;
+}
+
+.container__top {
+    background: $light-blue;
+    margin-bottom: $xl-size;
+    padding-bottom: $s-size;
+}
+
+.container__nosearch {
+    color: $off-white;
+    text-align: center;
+}
+
+.container__notfound {
+    color: $white;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .container__inputs {
+        flex-direction: row;
+        margin: 0 $s-size 0 0;
+    }
+}
