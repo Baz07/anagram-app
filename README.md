@@ -7,4 +7,4 @@
 
 #### Website Interface
 
-![Web Interface](interface.jpg)
+![Web Interface](interface.JPG)
