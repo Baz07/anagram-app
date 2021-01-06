@@ -34,3 +34,42 @@ def isAnagram(str1, str2):
         if(hashMap1[each_char] != hashMap2[each_char]): return False    
 
     return True
+
+
+# ## UPDATE: FROM OBJECT ORIENTED PERSPECTIVE
+# class AnagramLogic(object):
+#     ## Common Dict that will be updated after every check and shared between all the instances
+#     finalWordPairs = {}
+
+#     ## Constructor
+#     def __init__(self,str1, str2):
+#         self.str1 = str1.strip()
+#         self.str2 = str2.strip()
+#         self.wordPair = AnagramLogic.finalWordPairs
+
+#     ## Check whether two words are anagrams or not
+#     def isAnagram(self):
+#         if (self.str1, self.str2) in self.wordPair.keys():
+#             AnagramLogic.finalWordPairs[(self.str1, self.str2)] += 1
+#         elif (self.str2, self.str1) in self.wordPair.keys():
+#             AnagramLogic.finalWordPairs[(self.str2, self.str1)] += 1
+#         else:
+#             AnagramLogic.finalWordPairs[(self.str1, self.str2)] = 1
+        
+#         if len(self.str1) != len(self.str2): return False
+
+#         hashMap1 = [0]*256
+#         hashMap2 = [0]*256
+
+#         for char in self.str1: hashMap1[ord(char)] += 1
+#         for char in self.str2: hashMap2[ord(char)] += 1
+
+#         for n in range(256):
+#             if (hashMap1[n] != hashMap2[n]):
+#                 return False
+        
+#         return True
+    
+#     ## Instance Representation
+#     def __str__(self):
+#         return f'User provided {self.str1} & {self.str2}'
