@@ -36,7 +36,7 @@ def isAnagram(str1, str2):
     return True
 
 
-# ## UPDATE: FROM OBJECT ORIENTED PERSPECTIVE
+# ## UPDATED AFTER DEADLINE: FROM OBJECT ORIENTED PERSPECTIVE
 # class AnagramLogic(object):
 #     ## Common Dict that will be updated after every check and shared between all the instances
 #     finalWordPairs = {}
